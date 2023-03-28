@@ -15,3 +15,18 @@
                 count++;
             }
         }
+        if (count == 0) 
+        {
+            Console.WriteLine("Нет строк, длина которых меньше или равна 3 символам.");
+        } 
+        else 
+        {
+            Array.Resize(ref outputArray, count);
+            Console.WriteLine("Строки, длина которых меньше или равна 3 символам:");
+            foreach (string s in outputArray) 
+            {
+                Console.WriteLine(s);
+            }
+        }
+    }
+}
